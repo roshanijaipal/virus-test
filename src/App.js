@@ -69,7 +69,7 @@ function App() {
     const blodCompValueFun = (e,i) => {
         let items = [...blodcomp];
         if(e.target.value){
-            items.push(e.target.value)
+            items[i] = e.target.value
             setBlodcomp(items)
             return items;
         }
