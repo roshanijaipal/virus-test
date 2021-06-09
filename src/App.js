@@ -21,6 +21,7 @@ function App() {
         let totalPeople = people; //number of people
         let bloodComposition = blodcomp; //the blood composition of the ith person
         let result = {};
+        let resultReport =[];
 
         bloodComposition.forEach((composition) => {
             let m = composition.length;
@@ -30,11 +31,11 @@ function App() {
         });
 
         for (const report in result) {
-            let resultReport =[];
             resultReport.push((result[report]))
-            setResult(resultReport)
+           
             console.log(result[report]);
         }
+        setResult(resultReport)
         return result
     }
 
